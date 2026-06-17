@@ -164,7 +164,7 @@ if prompt := st.chat_input("שאל שאלה על תקן 466..."):
                 full_response = ""
                 
                 # ביצוע הסטרים דרך ה-chat_session
-                response_stream = st.session_state.chat_session.send_message(prompt, stream=True)
+                response_stream = st.session_state.chat_session.send_message(prompt,)
                 
                 for chunk in response_stream:
                     if chunk.text:
