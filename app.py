@@ -64,12 +64,6 @@ with st.sidebar:
 # קריאת המפתח ישירות מהכספת המאובטחת של השרת
 api_key = st.secrets["AIzaSyB2jrEW37IcOXk4B1SsE66BEt4tAZbR2G8"]
     
-    
-    # כפתור שיחה חדשה שמנקה את הזיכרון לחלוטין
-    if st.button("🔄 שיחה חדשה (איקוס טוקנים)"):
-        st.session_state.messages = []
-        st.session_state.chat_session = None
-        st.rerun()
 
 # --- ניהול מצב השיחה (Session State) ---
 if "messages" not in st.session_state:
