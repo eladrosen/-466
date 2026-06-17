@@ -64,7 +64,6 @@ with st.sidebar:
 # קריאת המפתח ישירות מהכספת המאובטחת של השרת
 api_key = st.secrets["AIzaSyB2jrEW37IcOXk4B1SsE66BEt4tAZbR2G8"]
     
-    st.markdown("---")
     
     # כפתור שיחה חדשה שמנקה את הזיכרון לחלוטין
     if st.button("🔄 שיחה חדשה (איקוס טוקנים)"):
