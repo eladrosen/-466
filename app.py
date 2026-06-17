@@ -61,7 +61,8 @@ with st.sidebar:
     st.header("⚙️ הגדרות מערכת")
     
     # הזנת ה-API Key בצורה מאובטחת
-    api_key_input = st.text_input("הזן Google API Key:", type="password")
+# קריאת המפתח ישירות מהכספת המאובטחת של השרת
+api_key = st.secrets["AIzaSyB2jrEW37IcOXk4B1SsE66BEt4tAZbR2G8"]
     
     st.markdown("---")
     
