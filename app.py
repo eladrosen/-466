@@ -150,7 +150,7 @@ if prompt := st.chat_input("שאל שאלה על תקן 466..."):
                 
                 # יצירת סשן צ'אט מתמשך דרך ה-SDK החדש
                 st.session_state.chat_session = client.chats.create(
-                    model="gemini-3.1-pro-preview",
+                    model="gemini-3.5-flash",
                     config=config
                 )
             except Exception as e:
